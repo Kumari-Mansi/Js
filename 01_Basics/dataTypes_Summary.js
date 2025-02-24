@@ -27,3 +27,45 @@ console.log(userEmail)
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id==anotherId)
+
+const bigNumber = 12324564365326723612n
+console.log(bigNumber)
+
+// Arrays 
+const heros = ["Papa", "Bhaiya","Su"]
+
+//objects
+let myobj={
+    name:"Rani",
+    age:23,
+}
+
+//Functions
+const myFunction = function(){
+    console.log("Hello Princy")
+}
+
+console.log(typeof bigNumber)  //BigInt
+console.log(typeof id)
+console.log(typeof anotherId)  //symbol
+
+// +++++++++++++++++++++++++++++++Memory Management+++++++++++++++++++++++++++++++++++++
+// stack memory => primitive dataTypes
+// heap memory => non-primitive dataTypes
+
+let myName = "Swati"
+let othername = myName
+othername = "Sarita"
+
+console.log(myName) //Swati
+console.log(othername) //Sarita
+
+let userOne = {
+    Email: "mymail12@gmail.com",
+    upi: "User@ybl"
+}
+let userTwo = userOne
+userTwo.Email="abc23@gmail.com"
+
+console.log(userOne.Email) //mymail12@gmail.com
+console.log(userTwo.Email)  //mymail12@gmail.com
