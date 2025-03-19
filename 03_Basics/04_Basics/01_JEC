@@ -1,0 +1,54 @@
+JAVASCRIPT EXECUTION CONTEXT
+
+{} => Global Execution Context (referred by this)
+Exection context slightly differs in node js environment and browser
+in browser this value is window object
+
+JAVASCRIPT is a single threaded
+
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context (Property of global object)
+
+how code runs
+{code} 
+1.Memory creation phase (space or memory is allocated to the variable declaration)
+2.Execution phase
+
+code sample
+let val1 = 10
+let val2 = 5
+Function addNum(num1,num2){
+    let total = num1+num2
+    return total
+}
+let result1=addNum(val1,val2)
+let result2=addNum(10,2)
+
+1.global Exection=>this
+
+2.Memory phase
+val1=>undefined
+val2=>undefined
+addNum=>definitation
+result1=>undefined
+result2=>undefined
+
+3.Execution phase
+val1=>10
+val2=>5
+addNum=>new variable environment + Exection thread
+
+under this:
+
+1.Memory phase
+val1=>undefined
+val2=>undefined
+total=>undefined
+
+2.Execution context
+num1=>10
+num2=>5
+total=>15 //return to global Exection context
+once the work is completed you can delete the global Exection context
+
