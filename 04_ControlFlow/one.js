@@ -52,3 +52,11 @@ if (userLoggedIn && debitCard) {
 if (loggedFromEmail && !(loggedFromGoogle)) {
     console.log('Acces allowed'); 
 }
+
+
+// Ternery Operators
+// condition > true:false
+
+const price = 100
+price<=80?console.log("Less than 80"):console.log("More than 80");
+
