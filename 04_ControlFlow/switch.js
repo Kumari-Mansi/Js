@@ -1,3 +1,5 @@
+// When multiple cases have to be chaked we use switch statements
+
 // switch (key) {
 //     case value:
         
