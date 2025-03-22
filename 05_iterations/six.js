@@ -60,5 +60,9 @@ mycode.forEach((item)=>
     console.log(`language is :- ${item.languageName} and its file type is :- ${item.languageFileName}`);
     
 })
-
+/*
+language is :- Javascript and its file type is :- js
+language is :- Java and its file type is :- java
+language is :- Python and its file type is :- py
+*/
 
