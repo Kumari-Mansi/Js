@@ -19,3 +19,25 @@ console.log(number)
   61, 71, 81, 91, 101
 ]
 */
+
+const number1 = myNums
+               .map((num)=>num*10)
+               .map((num)=>num+1)
+               .filter((num)=>num>40)
+
+console.log(number1)
+/*
+[
+  41, 51,  61, 71,
+  81, 91, 101
+]
+  
+*/
+const number2 = myNums
+               .map((num)=>num*10)
+               .map((num)=>num+1)
+               .filter((num)=>num%2!=0)
+               .filter((num)=>num>40 && num<90)
+
+console.log(number2)
+// [ 41, 51, 61, 71, 81 ]
