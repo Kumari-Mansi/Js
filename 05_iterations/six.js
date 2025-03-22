@@ -52,13 +52,13 @@ const mycode = [
     {
         languageName:"Python",
         languageFileName:"py"
-    }
+    },
 ]
 
-myCoding.forEach((item)=>
+mycode.forEach((item)=>
 {
-    console.log(item);
+    console.log(`language is :- ${item.languageName} and its file type is :- ${item.languageFileName}`);
     
 })
-myCoding.forEach(printME)
+
 
