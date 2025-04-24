@@ -66,3 +66,15 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## Project - 3
+```javascript
+const clock = document.getElementById('clock');
+//const clock = documrnt.querySelector('#clock)
+
+setInterval(function (){
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+},1000);
+// This runs the provided function every 1000 milliseconds (or every 1 second).
+```
