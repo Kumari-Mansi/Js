@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async JS Example</title>
+</head>
+<body>
+  <h1>Next Async JS</h1> 
+  <button id="start">Start</button>
+  <button id="stop">Stop</button> 
+
+  <script>
+    let intervalId = null;
+
+    const sayDate = function(str) {
+      console.log(str, new Date().toLocaleTimeString());
+    }
+
+    document.querySelector('#start').addEventListener('click', function() {
+      if (intervalId === null) { // prevent multiple intervals
+        intervalId = setInterval(sayDate, 1000, "Hiii");
+      }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function() {
+      clearInterval(intervalId);
+      intervalId = null; // reset so it can be restarted
+    });
+  </script>
+</body>
+</html>
