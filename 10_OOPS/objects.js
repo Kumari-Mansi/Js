@@ -1,3 +1,5 @@
+// new keyword and its significance in js
+
 function multiplyBy5(num){
     this.num=num
 return num*5
@@ -31,6 +33,8 @@ bhai.show()
 di.show()
 
 /*
+overview of new keyword
+
 Here's what happens behind the scenes when the new keyword is used:
 
 A new object is created: The new keyword initiates the creation of a new JavaScript object.
