@@ -1,5 +1,5 @@
 const user ={
-    _email:"raja27@yahoo.ac.in",
+    email:"raja27@yahoo.ac.in",
     _password:"rajag",
 
 
